@@ -1,5 +1,7 @@
 # Codilinks
 
+[![Build](https://github.com/josepin2/codilinks/actions/workflows/build.yml/badge.svg)](https://github.com/josepin2/codilinks/actions/workflows/build.yml)
+
 Aplicación para codificar/transformar enlaces en Windows, con interfaz GUI basada en `customtkinter`. Incluye script de empaquetado para generar un ejecutable offline (`Link.exe`) sin necesidad de tener Python instalado.
 
 ## Características
@@ -48,6 +50,11 @@ Opciones:
 - Icono: coloca `icon.ico` junto al `.bat` y se aplicará automáticamente.
 - Si necesitas ver la consola por depuración, edita el `.bat` y elimina `--noconsole`.
 
+## Descargas
+- Descarga la última versión del ejecutable desde la página de Releases:
+  `https://github.com/josepin2/codilinks/releases`
+- Los builds de CI suben un artefacto `Link.exe` por cada push/PR a `main`.
+
 ## Publicación en GitHub
 Este repositorio está preparado para ser versionado con `git` y subido a GitHub.
 
@@ -67,6 +74,17 @@ git remote add origin https://github.com/USUARIO/codilinks.git
 git push -u origin main
 ```
 
+## Automatización de releases
+Cada vez que se crea un tag con formato `v*` (por ejemplo, `v0.1.0`), se ejecuta un workflow que:
+- Compila el `Link.exe` en Windows.
+- Crea una Release en GitHub y adjunta el ejecutable como asset.
+
+Para publicar una versión:
+```
+git tag v0.1.0
+git push origin v0.1.0
+```
+
 ## Solución de problemas
 - Si el ejecutable no se genera, revisa las rutas y dependencias. Prueba:
   `venv\Scripts\pip.exe install -r requirements.txt`.
@@ -79,4 +97,3 @@ Consulta `docs/CONTRIBUTING.md` para la guía de contribución.
 
 ## Licencia
 No se ha definido una licencia específica. Si planeas publicar públicamente, considera añadir una licencia (MIT, Apache-2.0, etc.).
-
