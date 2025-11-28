@@ -96,4 +96,4 @@ git push origin v0.1.0
 Consulta `docs/CONTRIBUTING.md` para la guía de contribución.
 
 ## Licencia
-No se ha definido una licencia específica. Si planeas publicar públicamente, considera añadir una licencia (MIT, Apache-2.0, etc.).
+Este proyecto está licenciado bajo `Apache License 2.0`. Consulta el archivo `LICENSE` para más detalles.
