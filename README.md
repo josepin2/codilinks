@@ -1,6 +1,6 @@
 # Codilinks
 
-[![Build](https://github.com/josepin2/codilinks/actions/workflows/build.yml/badge.svg)](https://github.com/josepin2/codilinks/actions/workflows/build.yml)
+[![Build](https://github.com/josepin2/codilinks/actions/workflows/build.yml/badge.svg)](https://github.com/josepin2/codilinks/actions/workflows/build.yml) [![License Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 
 Aplicación para codificar/transformar enlaces en Windows, con interfaz GUI basada en `customtkinter`. Incluye script de empaquetado para generar un ejecutable offline (`Link.exe`) sin necesidad de tener Python instalado.
 
@@ -97,3 +97,6 @@ Consulta `docs/CONTRIBUTING.md` para la guía de contribución.
 
 ## Licencia
 Este proyecto está licenciado bajo `Apache License 2.0`. Consulta el archivo `LICENSE` para más detalles.
+
+## Avisos (NOTICE)
+Consulta el archivo `NOTICE` para atribuciones y avisos legales adicionales del proyecto y de dependencias de terceros cuando aplique.
